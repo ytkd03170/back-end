@@ -1,0 +1,8 @@
+@charset "UTF-8";
+th, td {
+	padding: 5px;
+}
+a {
+	padding-right: 10px;
+}
+.customer em{color: #fc1d3e;}
