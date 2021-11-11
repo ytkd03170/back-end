@@ -1,0 +1,30 @@
+なにも選ばずに送信した場合に値が届くのはどれ?
+不足したタグを追加して試してください
+
+値が入ってるかどうかの判定をしてください｡
+<?php
+	if(isset($_POST)){
+		var_dump( 
+			$_POST['txt'] , 
+			$_POST['chk'] , 
+			$_POST['rdo'] , 
+			$_POST['sct'] , 
+		);
+	}
+?>
+
+<input type="text" name="txt" >
+
+<input type="checkbox" name="chk[]" value="0">
+<input type="checkbox" name="chk[]" value="1">
+<input type="checkbox" name="chk[]" value="2">
+
+<input type="radio" name="rdo" value="4">
+<input type="radio" name="rdo" value="5">
+<input type="radio" name="rdo" value="6">
+
+<select name="sct" >
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+</select>
