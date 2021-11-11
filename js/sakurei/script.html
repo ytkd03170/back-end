@@ -1,0 +1,119 @@
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+	/* id要素の取得 jQueryだとこう
+	*/
+	$('#main').html('<p>なにか</p>');
+</script>
+
+<div id="main">
+	<!--ここになにか埋め込みたい-->
+</div>
+jQuery CDN でググる
+<?php
+	var s= 
+?>
+<script>
+	var e = document.getElementById('main');
+/*命名規則 ロウワーキャメルケース
+	document.getElementById('main').innerHTML='<p>なにか</p>';
+ */
+	var h = 11;
+	var k = 23;
+	var j = 32; 
+
+
+	var a=44 ,b = 55, c= 66 ;
+console.log(a);
+
+/*関数の使い方*/
+		daikei(j,k,h);
+		daikei(a,b,c); //引数で渡す
+
+/*関数の書き方*/
+		daikei2(j,k);
+	function daikei(j,k,h=0){
+		//値が来なければ0を代入する
+		//引数で順番通りにもらう
+		console.log( (j+k)*h/2 );
+	}
+		console.log( daikei2(j,k,h) );
+
+	function daikei2(j,k,h){
+		//もらった値を返す return
+		 return (j+k)*h/2 ;
+	}
+
+
+	var menseki =	function (j,k,h){
+		//無名関数として書いたケース
+		 return (j+k)*h/2 ;
+	}
+
+	var obj = {'hokkaido':'北海道' , 'aomori':'青森'} ;
+
+	console.log( obj['hokkaido'] );
+
+	for( var i=0 ; i < 100 ; i++){
+			// if( i % 3 ) console.log(i);
+	}
+
+
+	function kobaisu(x,y){
+		if(x < y){
+			for( x; x < y ; x++ ){
+					if( x % 15 === 0)
+						console.log(x);
+			}
+		}
+	}
+  kobaisu(0,100);
+</script>
+jQueryの入門道場
+jquery-master.net/basic/
+	ブックマークしてください
+	
+
+jsでなければできないことをやる
+	ユーザーの動作が伴う処理はjs
+	そうじゃなければphpで
+
+	ボタンを押したら何か出てくる
+	なにか選んだら入れ替わる
+	DOM(もともと書いてあるHTMLの各要素)の取得
+	が生のjsだと書きにくい
+	これらは全部jQuery(ジェークエリ)というライブラリ
+	が直感的に書ける
+
+
+
+練習問題
+	2つの数字を渡すと､その間の3と5の共通公倍数をコンソールに出す関数を作ってください
+
+
+javascriptでいうオブジェクトはphpの連想配列も含んでます｡
+<?php  連想配列
+	$a = [ 'hokkaido'=>'北海道' , 'aomori'=>'青森']
+?>
+変数は関数の中と外では分離されている
+外で代入されても､関数内では別物なので値は入ってない
+渡す引数と､受け取る引数は数が合って無ければならない
+
+引数の数が使うシーンによって異なる場合
+引数側で初期値を入れると動きます｡
+
+
+同じファイル内なら書き順は関係ない
+別ファイルなら､先に(上で)読み込む必要がある
+
+
+return で関数の処理は終わり､呼び出し元へ返る
+  〃の右に 値があれば呼び出し元に返す
+
+関数名の重複は許されない､
+無名関数ならその心配がない
+
+
+別の値を処理するときに計算式を全部書かなければならいのが面倒
+同じ処理をあちこちに書くので変更を加えた場合は何倍も大変
+
+関数を使えば解決します
