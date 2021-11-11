@@ -1,0 +1,13 @@
+ファイル一つで送信→受信するための分岐
+<?php
+
+/*
+  送信された値があればここに出す
+*/
+?>
+
+<form action="" method="post">
+
+  <input type="text" name="onamae">
+  <input type="submit" value="送信">
+</form>

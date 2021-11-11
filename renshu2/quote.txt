@@ -1,0 +1,10 @@
+選択肢が1999と出るようにしなさい｡
+<select>
+  
+<?php
+ $i = "1999";
+ echo '<option> $i </option>'
+
+?>
+
+</select>

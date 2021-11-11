@@ -1,0 +1,19 @@
+https://ultimai.org/mdlsrc/pazl/waterSrider.html
+ここを開いて､フローチャートを完成させつつ
+単一のif文で評価式を作って正しく分岐させてください｡
+
+
+	チャレンジャーなら難易度が高いこっち
+	https://ultimai.org/mdlsrc/pazl/waterSrider2.html
+
+
+<?php
+	$h=120  //身長
+	$a = 11 //age
+	$p = false  //parents
+
+
+	echo "乗れる";
+
+	echo "乗れない";
+
