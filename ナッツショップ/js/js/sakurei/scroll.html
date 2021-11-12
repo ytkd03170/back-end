@@ -1,0 +1,42 @@
+<style>
+  div{height: 300px;background:skyblue; 
+    margin:20px}  
+</style>
+
+<a id="myTop">ページの始まり</a><br />
+<a href="#content_1">content_1</a> 
+<a href="https://google.com">content_2</a> 
+<!-- #content_2へのリンクを書いてください -->
+
+<div id="content_1">content 1</div>
+<div id="content_2">content 2</div>
+<div id="content_3">content 3</div>
+<div id="content_4">content 4</div>
+
+<span id="taro" data-myid="101">太郎</span>
+
+  <a href="#myTop">トップへ戻る</a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  //属性値を与える場合
+ $('#taro').attr( 'title','たろう' );
+ //カスタム属性の取得 data()メソッドを使います
+  console.log( $('#taro').data('myid') );
+
+
+  $("a[href^='#']").click(function() {
+    var myHref = $(this).attr("href");
+    console.log(myHref); 
+/*
+ attrは属性のこと,取得したり,付与したりできるメソッド
+  $(this)はこのイベントの主語になってる要素
+  ($("a[href^='#']"))のこと,関数内だけで使える｡
+*/
+    var myPos = $(myHref).offset().top;
+    console.log(myPos); 
+
+    $("body").animate({scrollTop : myPos}, 500);
+    // return false; なくてもいい
+  });
+</script>
