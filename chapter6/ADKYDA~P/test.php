@@ -1,4 +1,0 @@
-zazazazaccccccccccccccccccccccccccccccccccc
-dadadadaccccccccccccccccccccccccccccccccccc
-swswswwsccccccccccccccccccccccccccccccccccc
-trtrtrtrrccccccccccccccccccccccccccccccccccc
