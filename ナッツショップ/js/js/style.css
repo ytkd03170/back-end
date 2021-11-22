@@ -1,9 +1,0 @@
-h1{font-size: 1em; color:#ff0088;font-weight:100; }
-/*タイプセレクタ*/
-.abc{border: solid;} /*クラスセレクタ*/
-#a{background: #cef;} /*idセレクタ*/
-section a{color: #45f} /*親子セレクタ*/
-h1 + h2{ display: none; } /*隣接セレクタ*/
-[type="text"]{border-radius:12px ;} /*属性セレクタ*/
-h1 , h2{ font-family: 'yumincho'; } /*共通セレクタ*/
-footer.content{} /*直接指定*/
