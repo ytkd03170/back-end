@@ -1,0 +1,40 @@
+<style>label{display:block}</style>
+<form id="radioB">
+ 
+</form>
+<input type="button" value="採点" onclick="saiten()" />
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+ var cities = {
+     "カナダ" : ["オタワ","トロント","モントリオール"],
+     "スイス" : ["ジュネーブ","チューリッヒ","ベルン"],
+     "ドイツ" : ["ハンブルク","ブレーメン","ベルリン"],
+     "スペイン" : ["バルセロナ","マドリード","リスボン"],
+     "オーストラリア" : ["シドニー","メルボルン","キャンベラ"]
+ };
+
+ $.each( cities , function(index,e){
+  console.log(index,e);
+
+    $('#radioB').append(`<h3>${index}</h3>`);
+    for( let i =0 ; i<3 ; i++){
+      $('#radioB').append(`<label><input type="radio" name=Q${index} value=${e[i]}>${e[i]}</label>`);
+    }
+ });
+
+function saiten(){
+  var seikai=0; //正解数を入れる変数
+  
+  //答えの番号を配列に入れる
+  var trueAns = [0,5,8,10,14];
+  
+  for (i=0 ; i<5 ; i++)  {
+     if($('[type="radio"]:eq('+trueAns[i]+'):checked').val())
+      seikai++;
+  }
+  
+  alert("あなたは"+seikai*20+"点でした！");
+}
+</script>
